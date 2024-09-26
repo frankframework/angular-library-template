@@ -23,3 +23,9 @@ This template repository consists of 2 angular projects which split the responsi
     - Has an `ng-package.json`  for ng-packagr to use
 
 Pay attention to `/package.json`, `/angular.json` & `projects/example-lib/package.json` since they define how the development environment will be set up compared to what will be published onto NPM.
+
+### Build
+Run `npx ng build` to build the library project using ng-packagr. The build artifacts will be stored in the `dist/%PROJECT_NAME%/` directory.
+
+### Publishing
+Run `npm publish` in the `dist/%PROJECT_NAME%/` directory in order to publish the library to a package registry.
