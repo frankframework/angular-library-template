@@ -5,7 +5,7 @@ A template repository for Angular libraries
 ![frank-framework-github-banner](banner.png)
 
 ## How to use
-Find and replace all `%PROJECT_NAME%` with your project name, you should also rename the `/projects/PROJECT_NAME` folder
+Find and replace all `%PROJECT_NAME%` with your project name, you should also rename the `/projects/PROJECT_NAME` folder and update `.eslintrc.js > parserOptions > project` property accordingly.
 
 > [!IMPORTANT]
 > Make sure to update angular to the latest version
