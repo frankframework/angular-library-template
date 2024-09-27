@@ -23,8 +23,8 @@
       "dom"
     ],
     "paths": {
-      "example-lib": [
-        "./dist/example-lib"
+      "%PROJECT_NAME%": [
+        "./dist/%PROJECT_NAME%"
       ]
     }
   },
