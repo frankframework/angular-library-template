@@ -3,5 +3,6 @@
   "dest": "../../dist/%PROJECT_NAME%",
   "lib": {
     "entryFile": "src/public_api.ts"
-  }
+  },
+  "assets": []
 }

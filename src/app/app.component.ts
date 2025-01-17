@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+// import { LibraryModule } from '%PROJECT_NAME%';
+
 @Component({
   selector: 'app-root',
   imports: [

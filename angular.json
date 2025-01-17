@@ -102,6 +102,11 @@
       "root": "projects/%PROJECT_NAME%",
       "sourceRoot": "projects/%PROJECT_NAME%/src",
       "prefix": "%PROJECT_NAME%",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
