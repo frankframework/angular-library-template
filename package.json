@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng build angular-components && ng serve",
+    "start": "ng build %PROJECT_NAME% && ng serve",
     "serve": "ng serve",
     "build": "ng build %PROJECT_NAME%",
-    "watch": "ng build angular-components --watch --configuration development",
+    "watch": "ng build %PROJECT_NAME% --watch --configuration development",
     "test": "ng test"
   },
   "private": true,
