@@ -8,7 +8,9 @@
     "build": "ng build %PROJECT_NAME%",
     "watch": "ng build %PROJECT_NAME% --watch --configuration development",
     "test": "ng test %PROJECT_NAME%",
-    "test:playground": "ng test angular-library-playground"
+    "test:playground": "ng test angular-library-playground",
+    "lint": "ng lint %PROJECT_NAME%",
+    "lint:playground": "ng lint angular-library-playground"
   },
   "private": true,
   "dependencies": {
@@ -25,10 +27,8 @@
     "zone.js": "~0.15.1"
   },
   "devDependencies": {
-    "@angular-eslint/builder": "^20.2.0",
     "@angular-eslint/eslint-plugin": "^20.2.0",
     "@angular-eslint/eslint-plugin-template": "^20.2.0",
-    "@angular-eslint/schematics": "^20.2.0",
     "@angular-eslint/template-parser": "^20.2.0",
     "@angular/build": "^20.2.1",
     "@angular/cli": "^20.2.1",
@@ -37,6 +37,7 @@
     "@types/jasmine": "~5.1.9",
     "@typescript-eslint/eslint-plugin": "^8.41.0",
     "@typescript-eslint/parser": "^8.41.0",
+    "angular-eslint": "^20.2.0",
     "eslint": "^9.34.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",

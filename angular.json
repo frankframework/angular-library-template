@@ -94,6 +94,15 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     },
@@ -124,12 +133,25 @@
             ],
             "tsConfig": "tsconfig.spec.json"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/%PROJECT_NAME%/src/**/*.ts",
+              "projects/%PROJECT_NAME%/src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "cli": {
-    "packageManager": "pnpm"
+    "packageManager": "pnpm",
+    "schematicCollections": [
+      "@schematics/angular",
+      "angular-eslint"
+    ]
   },
   "schematics": {
     "@schematics/angular:component": {
