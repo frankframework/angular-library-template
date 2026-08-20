@@ -18,14 +18,8 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": [
-      "ES2022",
-      "dom"
-    ],
     "paths": {
-      "%PROJECT_NAME%": [
-        "./dist/%PROJECT_NAME%"
-      ]
+      "%PROJECT_NAME%": ["./dist/%PROJECT_NAME%"]
     }
   },
   "angularCompilerOptions": {
