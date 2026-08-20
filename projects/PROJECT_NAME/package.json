@@ -12,6 +12,6 @@
     "directory": "projects/%PROJECT_NAME%"
   },
   "peerDependencies": {
-    "@angular/core": "^19.0.0"
+    "@angular/core": "^22.0.0"
   }
 }
