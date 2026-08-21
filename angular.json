@@ -109,11 +109,26 @@
             "tsConfig": "tsconfig.lib.json"
           }
         },
-        "test": {
-          "builder": "@angular/build:karma",
+        "tester": {
+          "builder": "@angular/build:application",
           "options": {
-            "polyfills": ["zone.js", "zone.js/testing"],
-            "tsConfig": "tsconfig.spec.json"
+            "tsConfig": "tsconfig.lib-spec.json"
+          },
+          "configurations": {
+            "testing": {
+              "aot": false,
+              "optimization": false,
+              "extractLicenses": false,
+              "polyfills": ["zone.js", "zone.js/testing"]
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "tsconfig.lib-spec.json",
+            "buildTarget": ":tester:testing",
+            "runner": "vitest"
           }
         },
         "lint": {

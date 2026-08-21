@@ -20,7 +20,8 @@
     "useDefineForClassFields": false,
     "paths": {
       "%PROJECT_NAME%": ["./dist/%PROJECT_NAME%"]
-    }
+    },
+    "types": ["vitest/globals"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
